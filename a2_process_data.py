@@ -11,7 +11,13 @@ contents = []
 with open("a2_input.csv") as input_file:
     for row in csv.reader(input_file):
         contents = contents + [row]
-
+print("""
+<!DOCTYPE html>
+<head>
+<title>Airline safety data</title>
+</head>
+<body>
+""")
 #######################################################
 ### Do your data processing below.
 ### The below code gives some examples
@@ -52,3 +58,6 @@ print(str2)
 print(type(str1),type(str2))
 help(type(str1))
 
+print("""</body>
+</html>
+""")
