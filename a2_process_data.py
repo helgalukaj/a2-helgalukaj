@@ -16,8 +16,15 @@ print("""<!DOCTYPE html>
     }
     </style>
 </head>
-<body>""")
+<h1>Airline safety</h1>
+<body>
 
+<p id="source">Dataset supplied by <a href="https://github.com/fivethirtyeight/data/tree/master/airline-safety">
+Airline data</a></p>
+<p>The aim of this  assignment calculations was to emphasize the dercreasing number of fatalities by he technology improvement:</p>
+<p>Average of fatalities 1985-1999:    ; 
+<p>Average of fatalities 2000-2014:    ;
+""")
 #print("This assignment (assignment 2) hasn't been finished.")
 #print("All it can do is print out the contents of a couple of cells of the file a2_input.csv:")
 #print("Cell at index 0,0:")
@@ -56,6 +63,8 @@ for i in range(57):
         print("<td>" + contents[i][m] + "</td>")
     print("</tr>")
 print("</table>")
-print("""</body>
+print("""
+
+</body>
 </html>""")
 
