@@ -17,7 +17,7 @@ fatality_after=fatality_after/56
 print("""<!DOCTYPE html> 
 <html lang=\"en\">
 <head>
-    <meta charset=\"utf-8\" />
+    <meta charset="utf-8" />
     <title>Airline safety data</title>
     <style>
     table,td {
@@ -27,16 +27,10 @@ print("""<!DOCTYPE html>
     table td, table th {
     padding: 10px;
     }
-    h1 {
-    text-align: center;
-    font-size: 18 px;
-    margin: 2px ,2px, 1.5px, 1.5px;
-    }
-     </style>
+   </style>
 </head>
-<h1>Airline safety</h1>
 <body>
-
+<h1>Airline safety</h1>
 <p id="source">Dataset supplied by <a href="https://github.com/fivethirtyeight/data/tree/master/airline-safety">
 Airline data</a></p>
 <p>The aim of this  assignment calculations was to emphasize the dercreasing number of fatalities by the technology improvement:</p>
@@ -75,15 +69,6 @@ Airline data</a></p>
 #print(str1)
 #print(str2)
 #print(type(str1),type(str2))
-def accidents():
-    s="Airlines that have low number of accidents:"
-    d=" Airlines that have high number of accidents:"
-    for i in range(56):
-        if int(contents[i+1][2])>0:
-            s=s+", " + contents[i+1][1]
-        else:
-            d=d+", " + contents[i+1][1]
-    return(s+d)
 print("<table>")
 for i in range(57):
     print("<tr>")
